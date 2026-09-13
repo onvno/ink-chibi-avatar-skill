@@ -11,23 +11,23 @@ If no reference is available, create an original character only; do not claim li
 
 ## Inputs
 
-- `realism`: a number from `0.0` to `1.0`. Default: `0.7`.
+- `realism`: a number from `0.0` to `1.0`. Default: `0.5`.
 - `expression`: a short, reference-specific description of the eyes, brows, mouth, gaze, and head angle. Add one hand gesture only when it is essential.
 - `face-shape`: optional. Use `subtle` by default; use `wider`, `longer`, or a user-provided custom direction only when the user explicitly requests that exaggeration.
 
-`realism` controls how much reference-specific facial shape and expression is retained. It does not allow pores, facial grain, or photorealistic skin.
+`realism` controls how much reference-specific facial structure is retained. It does not allow pores, facial grain, or photorealistic skin. At the default `0.5`, preserve the subject through a few high-signal anchors—hair, brows, gaze, mouth, facial hair, and key costume shapes—not exact adult facial geometry.
 
 | Range | Result |
 | --- | --- |
 | `0.0–0.45` | Strong Q version: broad, playful facial simplification and very few facial details. |
-| `0.46–0.69` | Stylised chibi portrait: clear likeness with smooth, simplified facial planes. |
-| `0.70–0.80` | Default range: mature, recognisable Q portrait with accurate expression and smooth, low-detail skin. |
+| `0.46–0.59` | Default range: clear expression with a deliberately redesigned Q face—large open eyes, fuller cheeks, a shorter lower face, and smooth broad colour planes. |
+| `0.60–0.80` | Likeness-forward Q portrait: preserve more facial structure and expression while remaining visibly caricatured. |
 | `0.81–1.0` | More reference-specific facial structure and expression lines, while remaining visibly illustrated and free of pores or photographic skin texture. |
 
 ## Fixed visual rules
 
 - Create a 1:1 close head-and-shoulders avatar. The head occupies about 80–86% of the canvas height. Keep the face as the clear focal point; show only enough shoulders or upper chest to identify clothing.
-- Make the head rounded and enlarged, the cheeks subtly fuller, and the lower face slightly shorter. Make the eyes noticeably larger and more open than the source by default, with enough visible sclera to carry the reference-specific gaze; preserve eye shape, spacing, and iris character. Apply a wider, longer, or other face-shape exaggeration only when `face-shape` explicitly requests it; otherwise keep the reference face silhouette. Keep adult character traits; avoid infant proportions and huge glossy anime eyes.
+- Make the head rounded and enlarged, the cheeks fuller, and the lower face clearly shorter. At the default `0.5`, use a deliberate Q redesign: eyes about one-quarter larger and more open than the source, with visible sclera that carries the reference-specific gaze; make the nose and mouth smaller and simpler; do not preserve exact jaw, chin, or skin-crease geometry. Preserve eye shape, spacing, iris character, and adult traits. `face-shape: subtle` means no additional width or length distortion beyond these default Q proportions; apply a wider, longer, or other exaggeration only when `face-shape` explicitly requests it. Avoid infant proportions and huge glossy anime eyes.
 - Use rich, clean, high-contrast colour. Preserve the subject's complexion and its lightness range, but remove muddy yellow, grey, underexposed, or coloured-light casts from the source. Use warm, lively skin midtones, controlled warm shadows, clear cheek and lip colour, dark hair or clothing anchors, and crisp light clothing highlights where the source supports them.
 - Render facial skin as broad, opaque, smoothly blended colour regions. Do not show pores, paper grain, stippling, pencil scratches, dry-brush marks, random specks, blemishes, or noisy micro-texture on the face. Put paint texture in the hair, clothing, and background instead.
 - Use fine-to-medium irregular ink only for brows, eyes, nostrils, mouth, hair separations, clothing folds, and small overlap points. Outer contours must be broken or varied; never use a thick, uniform black border around the head, body, clothing, or accessories.
@@ -40,9 +40,9 @@ If no reference is available, create an original character only; do not claim li
 Start with this English prompt. Replace the brackets and append a concise expression add-on.
 
 ```text
-Transform the subject in the reference image into a vivid hand-painted chibi portrait avatar. Preserve the subject's recognisable face silhouette, hairstyle, facial hair, headwear, key accessories, and dominant clothing shapes. Do not substitute a generic anime face or a photo-like painted portrait.
+Transform the subject in the reference image into a vivid hand-painted chibi portrait avatar. Preserve high-signal identity anchors: hairstyle, brows, gaze, mouth, facial hair, headwear, key accessories, and dominant clothing shapes. Do not reproduce exact adult facial geometry, substitute a generic anime face, or make a photo-like painted portrait.
 
-Create a 1:1 close head-and-shoulders avatar. The head occupies about 80–86% of the canvas height; keep the face as the unmistakable focal point, with only enough shoulders or upper chest to identify clothing. Keep a clear adult chibi silhouette: round enlarged head, subtly fuller cheeks, shortened lower face, and eyes noticeably larger and more open than the source, with enough visible sclera to carry the reference-specific gaze while retaining eye shape, spacing, and iris character. Apply [FACE-SHAPE DIRECTION] only when the user explicitly requests it; otherwise preserve the reference face silhouette. Avoid baby proportions and huge glossy anime eyes.
+Create a 1:1 close head-and-shoulders avatar. The head occupies about 80–86% of the canvas height; keep the face as the unmistakable focal point, with only enough shoulders or upper chest to identify clothing. Keep a clear adult chibi silhouette: round enlarged head, fuller cheeks, clearly shortened lower face, and eyes about one-quarter larger and more open than the source, with enough visible sclera to carry the reference-specific gaze while retaining eye shape, spacing, and iris character. At realism `0.5`, make the nose and mouth smaller and simpler and do not retain exact jaw, chin, or skin-crease geometry. `subtle` means no additional width or length distortion beyond these default Q proportions. Apply [FACE-SHAPE DIRECTION] only when the user explicitly requests it. Avoid baby proportions and huge glossy anime eyes.
 
 Apply realism level [REALISM]: [REALISM DIRECTION]. Use rich, clean, high-contrast colour. Preserve the subject's complexion and its lightness range, but correct muddy yellow, grey, underexposed, or coloured-light casts from the source. Use warm lively skin midtones, controlled warm shadows, clear cheek and lip colour, dark hair or clothing anchors, and crisp light clothing highlights where supported by the source.
 
