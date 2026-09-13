@@ -6,11 +6,12 @@
 
 ## 效果预览
 
-以下是仓库内置的默认 `realism: 0.5` 验收结果。参考图中的非主体人物、字幕、场景与水印不会带入成图。
+以下是仓库内置的默认 `realism: 0.5` 验收结果。每列先放原始参考图，下一行放对应的 Q 版头像；参考图中的非主体人物、字幕、场景与水印不会带入成图。
 
 | 眼镜笑脸 | 红衣编发 |
 | --- | --- |
-| ![眼镜笑脸 Q 版头像](examples/generated/smiling-scholar.png) | ![红衣编发 Q 版头像](examples/generated/red-braids.png) |
+| **原图**<br>![眼镜笑脸原图](examples/0.jpg) | **原图**<br>![红衣编发原图](examples/02-red-braids.png) |
+| **默认 `realism: 0.5`**<br>![眼镜笑脸 Q 版头像](examples/generated/smiling-scholar.png) | **默认 `realism: 0.5`**<br>![红衣编发 Q 版头像](examples/generated/red-braids.png) |
 
 参考输入位于 [`examples/`](examples/)；对应的成图位于 [`examples/generated/`](examples/generated/)。
 
