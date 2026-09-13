@@ -38,7 +38,7 @@ If no reference is available, create an original character only; do not claim li
 Start with this English prompt. Replace the brackets and append a concise expression add-on.
 
 ```text
-Transform the subject in reference image 1 into a vivid hand-painted chibi portrait avatar. Reference image 2 is style-only: match its saturated painted colour, close face emphasis, fine expressive ink, and intentional red-and-blue ink-splash composition; do not copy its identity or exact pose. Preserve the subject's recognisable face silhouette, hairstyle, facial hair, headwear, key accessories, and dominant clothing shapes. Do not substitute a generic anime face or a photo-like painted portrait.
+Transform the subject in the reference image into a vivid hand-painted chibi portrait avatar. Preserve the subject's recognisable face silhouette, hairstyle, facial hair, headwear, key accessories, and dominant clothing shapes. Do not substitute a generic anime face or a photo-like painted portrait.
 
 Create a 1:1 close head-and-shoulders avatar. The head occupies about 78–85% of the canvas height; keep the face as the unmistakable focal point, with only enough shoulders or upper chest to identify clothing. Keep a clear adult chibi silhouette: round enlarged head, subtly fuller cheeks, shortened lower face, and eyes modestly larger than the source while retaining their shape and spacing. Avoid baby proportions and huge glossy anime eyes.
 
