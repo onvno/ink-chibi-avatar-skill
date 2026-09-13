@@ -1,5 +1,5 @@
 ---
-name: ink-wash-chibi-avatar-skill
+name: ink-chibi-avatar-skill
 description: Generate 1:1 Chinese ink-wash chibi avatars from a reference image, with enlarged expressive eyes, smooth skin, flowing ink hair, and restrained rice-paper accents. Use for 水墨 Q版头像, 国风卡通头像, or ink-painted chibi portraits.
 ---
 

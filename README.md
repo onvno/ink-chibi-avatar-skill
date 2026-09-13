@@ -1,20 +1,16 @@
-# 水墨 Q 版头像 Skill
+# Ink Chibi Avatar Skill
 
-`ink-wash-chibi-avatar-skill` 将参考图转换为固定风格的 1:1 水墨 Q 版头像：放大而有神的眼睛、圆润的成人 Q 比例、明亮干净的手绘肤色，以及克制的宣纸背景点缀。
+`ink-chibi-avatar-skill` 将参考图转换为固定风格的 1:1 水墨 Q 版头像：放大而有神的眼睛、圆润的成人 Q 比例、明亮干净的手绘肤色，以及克制的宣纸背景点缀。
 
 它追求的是“认得出、很可爱、像一幅画”，而不是写实肖像或泛化的日系动漫脸。
 
 ## 效果预览
 
-以下是仓库内置的默认 `realism: 0.5` 验收结果。双人原图会拆分为两个独立头像；原图中的字幕、场景与水印不会带入成图。
+以下是仓库内置的默认 `realism: 0.5` 验收结果。参考图中的非主体人物、字幕、场景与水印不会带入成图。
 
-| 红帽官服 | 眼镜笑脸 |
+| 眼镜笑脸 | 红衣编发 |
 | --- | --- |
-| ![红帽官服 Q 版头像](examples/generated/red-hat-official.png) | ![眼镜笑脸 Q 版头像](examples/generated/smiling-scholar.png) |
-
-| 红衣编发 | 橙色外套 |
-| --- | --- |
-| ![红衣编发 Q 版头像](examples/generated/red-braids.png) | ![橙色外套 Q 版头像](examples/generated/orange-jacket.png) |
+| ![眼镜笑脸 Q 版头像](examples/generated/smiling-scholar.png) | ![红衣编发 Q 版头像](examples/generated/red-braids.png) |
 
 参考输入位于 [`examples/`](examples/)；对应的成图位于 [`examples/generated/`](examples/generated/)。
 
@@ -35,10 +31,11 @@
 将整个目录放进 Codex 的 skills 目录，保持 `SKILL.md` 位于目录根部。例如：
 
 ```bash
-cp -R ink-wash-chibi-avatar-skill ~/.codex/skills/
+mkdir -p ~/.codex/skills
+cp -R ./ink-chibi-avatar-skill ~/.codex/skills/
 ```
 
-之后在支持图像生成的 Codex 会话中，可直接用自然语言触发，也可显式引用 `$ink-wash-chibi-avatar-skill`。
+目录名与 `SKILL.md` 中的 `name` 必须保持为 `ink-chibi-avatar-skill`。之后在支持图像生成的 Codex 会话中，可直接用自然语言触发，也可显式引用 `$ink-chibi-avatar-skill`。
 
 ### 2. 最小请求
 
@@ -53,7 +50,7 @@ cp -R ink-wash-chibi-avatar-skill ~/.codex/skills/
 ### 3. 指定参数
 
 ```text
-使用 $ink-wash-chibi-avatar-skill，基于这张参考图生成 1:1 水墨 Q 版头像。
+使用 $ink-chibi-avatar-skill，基于这张参考图生成 1:1 水墨 Q 版头像。
 realism: 0.5
 expression: 眉头微挑、侧目、嘴角轻轻上扬
 face-shape: subtle
@@ -78,14 +75,13 @@ face-shape: subtle
 
 | 输入参考 | 输出头像 |
 | --- | --- |
-| [`0.jpg`](examples/0.jpg)（双人） | [`red-hat-official.png`](examples/generated/red-hat-official.png)、[`smiling-scholar.png`](examples/generated/smiling-scholar.png) |
+| [`0.jpg`](examples/0.jpg)（仅右侧人物） | [`smiling-scholar.png`](examples/generated/smiling-scholar.png) |
 | [`02-red-braids.png`](examples/02-red-braids.png) | [`red-braids.png`](examples/generated/red-braids.png) |
-| [`20240904210501698_3e79c95b487a44f18a5d9d1a5507132b.jpg`](examples/20240904210501698_3e79c95b487a44f18a5d9d1a5507132b.jpg) | [`orange-jacket.png`](examples/generated/orange-jacket.png) |
 
 ## 目录结构
 
 ```text
-ink-wash-chibi-avatar-skill/
+ink-chibi-avatar-skill/
 ├── SKILL.md               # Codex 执行时读取的完整规则
 ├── README.md              # 本说明与使用示例
 └── examples/
@@ -94,3 +90,7 @@ ink-wash-chibi-avatar-skill/
 ```
 
 `SKILL.md` 是唯一的生成规范来源；README 只说明如何调用、选择参数和查看验收样例。
+
+## 关注
+
+欢迎关注微信公众号：知之为知之知。
