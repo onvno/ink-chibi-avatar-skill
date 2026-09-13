@@ -24,7 +24,7 @@ Translate a natural-language style request to the closest standard style. Use on
 - Preserve the source's identifying visual features. Simplify minor facial planes and incidental skin detail instead of replacing the face.
 - Render skin as designed illustration colour, not as a literal copy of poor lighting or camera white balance. Preserve the subject's complexion and its range of lightness; do not arbitrarily lighten it. Remove muddy yellow, grey, or underexposed colour casts when they come from the source lighting, then use clean, balanced midtones and gentle value changes.
 - Keep outlines fine to medium and irregular. Use dark ink mainly for facial cues and small separations; let colour and value define most outer edges. Outer contours must be broken, pale, or colour-tinted rather than continuous black edges. Never use a thick, uniform black border around the head, body, clothing, or accessories.
-- Keep the background simple and supportive: paper texture or a low-detail colour field is allowed; scenery, UI, poster framing, borders, and busy props are not.
+- Keep the background simple and supportive: use paper texture or a low-detail colour field, plus 3–7 small, style-matched washes, dry-brush marks, ink speckles, or grain accents around the outer silhouette. Keep these accents out of the face and below 15% of the canvas; scenery, UI, poster framing, borders, and busy props are not allowed.
 - Do not generate text, letters, numerals, captions, signatures, logos, or watermarks.
 - If an important source prop contains writing—for example a banknote, card, screen, book, label, or sign—either omit it or render it as a blank, unmarked shape.
 
@@ -36,10 +36,10 @@ Treat `realism` as a visual-detail dial, not a guarantee of photographic accurac
 | --- | --- |
 | `0.0–0.35` | Strong Q version: broad simplification, smooth graphic skin, almost no wrinkles, pores, or fine texture. |
 | `0.36–0.65` | Stylised portrait: clear likeness with smooth painted skin and limited soft facial detail. |
-| `0.66–0.80` | Default range: clear likeness with an obvious Q silhouette; smooth painted skin, simplified facial planes, and only sparse expression lines. |
+| `0.66–0.80` | Default range: clear likeness with an obvious Q silhouette; smooth low-texture painted skin, simplified facial planes, no visible pores, and at most a few soft expression lines. |
 | `0.81–1.0` | Detailed illustrated portrait: retain more reference-specific skin texture and expression lines, but remain visibly painted rather than photographic. |
 
-At every level, include texture only when it helps the reference-specific likeness. Do not invent wrinkles, pores, blemishes, or weathered skin.
+At every level, include skin texture only when it helps the reference-specific likeness. Do not invent wrinkles, pores, blemishes, or weathered skin. Keep brush and paper texture in the paint, not as facial texture.
 
 ## Standard styles
 
@@ -68,7 +68,7 @@ Use exactly the visual language of [STYLE]. Keep the portrait visibly illustrate
 
 Use fine-to-medium, irregular dark lines only for facial cues and small separations. Define most outer edges through paint value and colour. Keep outer contours broken, pale, or colour-tinted rather than continuous black edges. No thick, uniform black outlines or black contour bands.
 
-Use a simple paper-texture or low-detail colour-field background. No scenery, text, letters, numerals, captions, signatures, logos, watermarks, UI, poster layout, borders, or frames. If a source prop contains writing, omit it or make it a blank unmarked shape.
+Use a simple paper-texture or low-detail colour-field background, with 3–7 small [STYLE]-matched washes, dry-brush marks, ink speckles, or grain accents around the outer silhouette. Keep those accents out of the face and below 15% of the canvas. No scenery, text, letters, numerals, captions, signatures, logos, watermarks, UI, poster layout, borders, or frames. If a source prop contains writing, omit it or make it a blank unmarked shape.
 
 Avoid photorealism, 3D rendering, plastic skin, beauty-filter effects, smooth digital airbrush, generic anime faces, heavy black outlines, dense black shading, detailed scenery, and unrelated props.
 
