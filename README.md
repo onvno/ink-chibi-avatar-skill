@@ -84,13 +84,19 @@ face-shape: subtle
 ink-chibi-avatar-skill/
 ├── SKILL.md               # Codex 执行时读取的完整规则
 ├── README.md              # 本说明与使用示例
-└── examples/
+├── examples/
     ├── *.jpg / *.png      # 输入参考图
     └── generated/         # 对应的默认 0.5 成图
+└── link/                  # 公众号与小红书关注素材
 ```
 
 `SKILL.md` 是唯一的生成规范来源；README 只说明如何调用、选择参数和查看验收样例。
 
 ## 关注
 
-欢迎关注微信公众号：知之为知之知。
+欢迎关注知之为知之知。
+
+| 微信公众号 | 小红书 |
+| --- | --- |
+| 扫码关注公众号 | 扫码关注小红书 |
+| ![知之为知之知微信公众号二维码](link/wechat.jpg) | ![知之为知之知小红书名片](link/xhs.jpg) |
