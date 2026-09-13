@@ -49,7 +49,7 @@ Render facial skin as broad, opaque, smoothly blended colour regions. No pores, 
 
 Use fine-to-medium irregular ink only for brows, eyes, nostrils, mouth, hair separations, clothing folds, and small overlap points. Keep outer contours broken or varied; no thick uniform black border or black contour band.
 
-Use a warm off-white paper background. Add one small, light translucent paint-splash accent behind the outer silhouette, with a few tapered flicks and sparse satellite droplets. Derive one or two softened accent colours from the subject's clothing, hair, accessories, or [USER PALETTE]; do not default to red and blue. Keep the accent below 8% of the canvas, leave the face and its immediate edge clean, and preserve generous negative space. Do not use random equal-sized dots, detailed scenery, text, logos, watermarks, UI, poster layouts, borders, or frames.
+Use a warm off-white paper background. Add one small, light translucent paint-splash accent behind the outer silhouette, with a few tapered flicks and sparse satellite droplets. Derive one or two softened accent colours from the subject's clothing, hair, accessories, or a user-supplied palette when present; do not default to red and blue. Keep the accent below 8% of the canvas, leave the face and its immediate edge clean, and preserve generous negative space. Do not use random equal-sized dots, detailed scenery, text, logos, watermarks, UI, poster layouts, borders, or frames.
 
 EXPRESSION ADD-ON: [REFERENCE-SPECIFIC EXPRESSION]
 ```
