@@ -36,10 +36,10 @@ Treat `realism` as a visual-detail dial, not a guarantee of photographic accurac
 | --- | --- |
 | `0.0–0.35` | Strong Q version: broad simplification, smooth graphic skin, almost no wrinkles, pores, or fine texture. |
 | `0.36–0.65` | Stylised portrait: clear likeness with smooth painted skin and limited soft facial detail. |
-| `0.66–0.80` | Default range: clear likeness with an obvious Q silhouette; smooth low-texture painted skin, simplified facial planes, no visible pores, and at most a few soft expression lines. |
+| `0.66–0.80` | Default range: clear likeness with an obvious Q silhouette; skin is made from broad, smooth blended colour regions with simplified facial planes, no pores, no paper grain or individual tool marks, and at most a few soft expression lines. |
 | `0.81–1.0` | Detailed illustrated portrait: retain more reference-specific skin texture and expression lines, but remain visibly painted rather than photographic. |
 
-At every level, include skin texture only when it helps the reference-specific likeness. Do not invent wrinkles, pores, blemishes, or weathered skin. Keep brush and paper texture in the paint, not as facial texture.
+At every level, include skin texture only when it helps the reference-specific likeness. Do not invent wrinkles, pores, blemishes, or weathered skin. At `0.66–0.80`, keep brush, paper, pencil, and print texture in the hair, clothing, and background; do not put it in facial skin.
 
 ## Standard styles
 
@@ -64,7 +64,7 @@ Transform the subject in the reference image into a [STYLE] hand-painted chibi p
 
 Create a 1:1 square close head-and-shoulders composition. The head occupies about 70–80% of the image height, with small shoulders or upper chest visible. Keep a clearly chibi silhouette: round the head, make the cheeks slightly fuller, shorten the lower face, and make the eyes modestly larger than the source while preserving their shape and spacing. Avoid baby proportions and huge glossy anime eyes.
 
-Use exactly the visual language of [STYLE]. Keep the portrait visibly illustrated. Apply realism level [REALISM] according to the realism-control rules: [REALISM DIRECTION]. Preserve the subject's complexion without mechanically copying muddy yellow, grey, or underexposed lighting casts; use clean, balanced illustrated skin midtones and gentle value changes.
+Use exactly the visual language of [STYLE]. Keep the portrait visibly illustrated. Apply realism level [REALISM] according to the realism-control rules: [REALISM DIRECTION]. For realism `0.66–0.80`, render facial skin as broad, smooth blended colour regions with no visible pores, paper grain, or individual brush, pencil, or print marks; place the selected medium's texture in the hair, clothing, and background instead. Preserve the subject's complexion without mechanically copying muddy yellow, grey, or underexposed lighting casts; use clean, balanced illustrated skin midtones and gentle value changes.
 
 Use fine-to-medium, irregular dark lines only for facial cues and small separations. Define most outer edges through paint value and colour. Keep outer contours broken, pale, or colour-tinted rather than continuous black edges. No thick, uniform black outlines or black contour bands.
 
