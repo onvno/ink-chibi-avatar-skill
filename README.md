@@ -15,15 +15,13 @@
 
 参考输入位于 [`examples/`](examples/)；对应的成图位于 [`examples/generated/`](examples/generated/)。
 
-### `realism: 0.5` 与默认 `0.6` 对比
+### 花冠人物：`realism: 0.4` 与默认 `0.6` 对比
 
-`0.5` 更强调 Q 化和脸部简化；默认 `0.6` 会多保留眉眼、脸型关系和表情。两档都遵循相同的水墨、明亮肤色和背景约束。
+同一参考图中，`0.4` 使用更明显的 Q 化、圆润脸部与放大眼神；默认 `0.6` 则保留更多五官关系、胡须和表情。两档都使用明亮的手绘肤色，不把原图的暖暗光当成基础肤色。
 
-| 眼镜笑脸 | 红衣编发 |
-| --- | --- |
-| **原图**<br>![眼镜笑脸原图](examples/0.jpg) | **原图**<br>![红衣编发原图](examples/02-red-braids.png) |
-| **`realism: 0.5`**<br>![眼镜笑脸 0.5](examples/generated/smiling-scholar-realism-0.5.png) | **`realism: 0.5`**<br>![红衣编发 0.5](examples/generated/red-braids-realism-0.5.png) |
-| **默认 `realism: 0.6`**<br>![眼镜笑脸 0.6](examples/generated/smiling-scholar.png) | **默认 `realism: 0.6`**<br>![红衣编发 0.6](examples/generated/red-braids.png) |
+| 原图 | `realism: 0.4` | 默认 `realism: 0.6` |
+| --- | --- | --- |
+| ![花冠长发人物原图](examples/03-flower-crown.jpg) | ![花冠长发人物 0.4](examples/generated/flower-crown-realism-0.4.png) | ![花冠长发人物 0.6](examples/generated/flower-crown-default-0.6.png) |
 
 ## 风格约束
 
@@ -88,6 +86,7 @@ face-shape: subtle
 | --- | --- |
 | [`0.jpg`](examples/0.jpg)（仅右侧人物） | [`smiling-scholar.png`](examples/generated/smiling-scholar.png)（默认 `0.6`） |
 | [`02-red-braids.png`](examples/02-red-braids.png) | [`red-braids.png`](examples/generated/red-braids.png)（默认 `0.6`） |
+| [`03-flower-crown.jpg`](examples/03-flower-crown.jpg) | [`flower-crown-default-0.6.png`](examples/generated/flower-crown-default-0.6.png)（默认 `0.6`；另附 `0.4` 对比图） |
 
 ## 目录结构
 
