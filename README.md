@@ -6,14 +6,24 @@
 
 ## 效果预览
 
-以下是仓库内置的 `realism: 0.5` 历史验收结果；新项目默认值已更新为 `0.6`。每列先放原始参考图，下一行放对应的 Q 版头像；参考图中的非主体人物、字幕、场景与水印不会带入成图。
+以下是仓库内置的默认 `realism: 0.6` 验收结果。每列先放原始参考图，下一行放对应的 Q 版头像；参考图中的非主体人物、字幕、场景与水印不会带入成图。
 
 | 眼镜笑脸 | 红衣编发 |
 | --- | --- |
 | **原图**<br>![眼镜笑脸原图](examples/0.jpg) | **原图**<br>![红衣编发原图](examples/02-red-braids.png) |
-| **`realism: 0.5` 验收图**<br>![眼镜笑脸 Q 版头像](examples/generated/smiling-scholar.png) | **`realism: 0.5` 验收图**<br>![红衣编发 Q 版头像](examples/generated/red-braids.png) |
+| **默认 `realism: 0.6`**<br>![眼镜笑脸 Q 版头像](examples/generated/smiling-scholar.png) | **默认 `realism: 0.6`**<br>![红衣编发 Q 版头像](examples/generated/red-braids.png) |
 
 参考输入位于 [`examples/`](examples/)；对应的成图位于 [`examples/generated/`](examples/generated/)。
+
+### `realism: 0.5` 与默认 `0.6` 对比
+
+`0.5` 更强调 Q 化和脸部简化；默认 `0.6` 会多保留眉眼、脸型关系和表情。两档都遵循相同的水墨、明亮肤色和背景约束。
+
+| 眼镜笑脸 | 红衣编发 |
+| --- | --- |
+| **原图**<br>![眼镜笑脸原图](examples/0.jpg) | **原图**<br>![红衣编发原图](examples/02-red-braids.png) |
+| **`realism: 0.5`**<br>![眼镜笑脸 0.5](examples/generated/smiling-scholar-realism-0.5.png) | **`realism: 0.5`**<br>![红衣编发 0.5](examples/generated/red-braids-realism-0.5.png) |
+| **默认 `realism: 0.6`**<br>![眼镜笑脸 0.6](examples/generated/smiling-scholar.png) | **默认 `realism: 0.6`**<br>![红衣编发 0.6](examples/generated/red-braids.png) |
 
 ## 风格约束
 
@@ -76,8 +86,8 @@ face-shape: subtle
 
 | 输入参考 | 输出头像 |
 | --- | --- |
-| [`0.jpg`](examples/0.jpg)（仅右侧人物） | [`smiling-scholar.png`](examples/generated/smiling-scholar.png) |
-| [`02-red-braids.png`](examples/02-red-braids.png) | [`red-braids.png`](examples/generated/red-braids.png) |
+| [`0.jpg`](examples/0.jpg)（仅右侧人物） | [`smiling-scholar.png`](examples/generated/smiling-scholar.png)（默认 `0.6`） |
+| [`02-red-braids.png`](examples/02-red-braids.png) | [`red-braids.png`](examples/generated/red-braids.png)（默认 `0.6`） |
 
 ## 目录结构
 
@@ -87,7 +97,7 @@ ink-chibi-avatar-skill/
 ├── README.md              # 本说明与使用示例
 ├── examples/
     ├── *.jpg / *.png      # 输入参考图
-    └── generated/         # 对应的历史 0.5 成图
+    └── generated/         # 默认 0.6 成图及参数对比图
 └── link/                  # 公众号与小红书关注素材
 ```
 
